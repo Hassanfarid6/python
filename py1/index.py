@@ -5,15 +5,15 @@
 #print(23.5)
 #print(33+4)
 
-nane = 'hassan'
-nane = 'ali'
-print(nane)
+name = 'hassan'
+name = 'ali'
+print(name)
 
-name = 'hASSAN and I live in karachi'
+name1 = 'hASSAN and I live in karachi'
 age = '18'
 education = 'BS',
 
-print("My name is :", name)
+print("My name is :", name1)
 print("My age is :", age)
 print("My education is :", education)
 
