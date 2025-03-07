@@ -147,4 +147,5 @@ if uploaded_files:
                 mime=mime_type
             )
 
-st.success("🎉 All files processed successfully!")  # Display success message when all files are processed
+# Display success message when all files are processed
+st.success("🎉 All files processed successfully!")  
