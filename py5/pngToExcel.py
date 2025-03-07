@@ -5,6 +5,9 @@ from PIL import Image
 import os
 from io import BytesIO
 
+# Set the Tesseract path
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 # Set Streamlit page config
 st.set_page_config(page_title="Data Sweeper", layout="wide")
 
@@ -54,7 +57,7 @@ if uploaded_files:
         elif file_extension in [".png", ".jpg", ".jpeg"]:
             # Process image files
             image = Image.open(file)
-            st.image(image, caption=f"🖼️ Uploaded: {file.name}", use_column_width=True)
+            st.image(image, caption=f"🖼️ Uploaded: {file.name}", use_container_width=True)
 
             # Extract text using Tesseract
             extracted_text = pytesseract.image_to_string(image)
