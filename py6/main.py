@@ -4,8 +4,8 @@ import pandas as pd
 import os
 from io import BytesIO
 
-# Configure the Streamlit app's appearance and layout
 # 'page_title' sets the browser tab title
+# Configure the Streamlit app's appearance and layout
 # 'layout="wide"' allows more horizontal space, improving the display for tables and graphs
 st.set_page_config(page_title="Data Sweeper", layout="wide")
 
